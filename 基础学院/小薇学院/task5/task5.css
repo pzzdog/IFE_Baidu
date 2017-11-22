@@ -46,7 +46,7 @@ input {
 }
 
 .main {
-    margin-right: 400px;
+    width: 70%;
     position: relative;
     float: left;
 }
@@ -63,7 +63,8 @@ img {
 }
 
 .aside {
-    width: 400px;
-    left: -100%;
-    float: left;
+    margin-left: -30%;
+    width: 30%;
+    position: relative;
+    float: right;
 }
