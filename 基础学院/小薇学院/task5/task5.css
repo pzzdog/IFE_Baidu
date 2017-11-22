@@ -1,0 +1,69 @@
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+}
+
+table {
+    border: 1px;
+}
+
+input {
+    font-size: 12px;
+}
+
+
+/* header nav */
+
+.nav {
+    /* background-color: black; */
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.nav h1 {
+    float: left;
+}
+
+.links {
+    float: right;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.links li {
+    font: white;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.main {
+    margin-right: 400px;
+    position: relative;
+    float: left;
+}
+
+.main div {
+    margin: 20px 0;
+    border: 1px solid #444444;
+    background-color: silver;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.aside {
+    width: 400px;
+    left: -100%;
+    float: left;
+}
