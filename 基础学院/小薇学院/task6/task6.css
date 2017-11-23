@@ -1,0 +1,144 @@
+/* CSS Document */
+
+
+/* 初始化 */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline-style: none;
+    /*FF*/
+}
+
+body {
+    line-height: 1;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    bblr: expression(this.onFocus=this.blur());
+    /*IE*/
+    outline-style: none;
+    /*FF*/
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* 代码开始 */
+
+.container {
+    width: 980px;
+    height: 1386px;
+}
+
+header {
+    font-family: "黑体";
+    overflow: hidden;
+}
+
+#ife {
+    width: 110px;
+    height: 61px;
+    background-color: red;
+    font: #ffffff 12px;
+    float: left;
+    clear: both;
+    vertical-align: bottom;
+}
+
+#date {
+    font: 12px #d45d5c;
+    float: right;
+}
