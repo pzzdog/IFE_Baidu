@@ -1,144 +1,422 @@
-/* CSS Document */
-
-
-/* 初始化 */
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    outline-style: none;
-    /*FF*/
 }
 
 body {
-    line-height: 1;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-a:hover,
-a:focus {
-    text-decoration: none;
-    bblr: expression(this.onFocus=this.blur());
-    /*IE*/
-    outline-style: none;
-    /*FF*/
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-input,
-select {
-    vertical-align: middle;
-}
-
-
-/* 代码开始 */
-
-.container {
+    background: #ffffff;
     width: 980px;
     height: 1386px;
+    margin: 0 auto;
 }
 
-header {
-    font-family: "黑体";
+
+/*--container--*/
+
+#header {
+    width: 892px;
+    height: 61px;
+    border-bottom: 2px solid #938e8c;
+    margin: 0 auto;
+    font: "黑体" 12px;
+}
+
+#header #logo {
+    float: left;
+    background: #d45d5c;
+    color: #fff;
+    width: 76px;
+    height: 9px;
+    padding: 43px 27px 9px 7px;
+}
+
+#header #date {
+    float: right;
+    width: 42px;
+    height: 9px;
+    color: #d45d5c;
+    padding: 38px 1px 6px;
+}
+
+
+/* section one */
+
+#one {
+    width: 892px;
+    margin: 34px auto 0;
     overflow: hidden;
 }
 
-#ife {
-    width: 110px;
-    height: 61px;
-    background-color: red;
-    font: #ffffff 12px;
-    float: left;
-    clear: both;
-    vertical-align: bottom;
+#one container {
+    height: 301px;
 }
 
-#date {
-    font: 12px #d45d5c;
+#one container div.left_pic {
+    margin: 0 auto;
+    float: left;
+    width: 641px;
+    height: 301px;
+}
+
+#one container div.left_pic img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#one container div.left_pic div.left-mark {
+    float: left;
+    margin-left: -100%;
+    background: #72A664;
+    opacity: 0.5;
+    width: 191px;
+    height: 100%;
+}
+
+#one container div.left_pic div.right-mark {
+    float: left;
+    margin-left: -191px;
+    background: #E1ABC3;
+    opacity: 0.5;
+    width: 191px;
+    height: 100%;
+}
+
+#one container div.right_about {
     float: right;
+}
+
+section#one container div.right_about {
+    float: right;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+    margin-right: 2px;
+}
+
+section#one container div.right_about p.about {
+    font: 24px/24px "Microsoft YaHei UI";
+    color: #000;
+    text-decoration: underline;
+    margin-top: 13px;
+}
+
+section#one container div.right_about p.about:first-letter {
+    font-size: 29px;
+}
+
+section#one container div.right_about p.technology {
+    font: 24px/24px "Microsoft YaHei UI";
+    color: #000;
+    text-decoration: underline;
+    margin-top: 7px;
+}
+
+section#one container div.right_about p.technology:first-letter {
+    font-size: 29px;
+}
+
+section#one container div.right_about p.about-technology {
+    font: 12px/12px "楷体";
+    color: #676767;
+    margin-top: 4px;
+}
+
+section#one container div.right_about p.seven {
+    font: italic 116px/116px "Microsoft YaHei UI";
+    color: #75b86b;
+    margin: 25px 0 0 -18px;
+}
+
+section#one container div.right_about p.three {
+    font: 55px "Microsoft YaHei UI";
+    color: #cc8091;
+    float: left;
+}
+
+section#one container div.right_about p.css {
+    font: 21px/12px "Microsoft YaHei UI";
+    color: #cc8091;
+    float: left;
+    margin: 30px 0 0 10px;
+}
+
+section#one container div.right_about p.css span {
+    font: 12px "Microsoft YaHei UI";
+    color: #cc8091;
+}
+
+
+/* section two */
+
+section#two {
+    width: 892px;
+    margin: 41px auto 0;
+    overflow: hidden;
+}
+
+section#two article.one {
+    float: left;
+    width: 228px;
+    margin-right: 30px;
+}
+
+section#two article.one p.what {
+    font: bold 16px "Microsoft YaHei UI";
+    color: #418c59;
+    text-decoration: underline;
+}
+
+section#two p.text-one {
+    font: 12px/16px "宋体";
+    color: #767777;
+    margin-top: 12px;
+}
+
+section#two article.two {
+    float: left;
+    width: 228px;
+    margin-right: 30px;
+}
+
+section#two article.two p.when {
+    font: bold 16px "Microsoft YaHei UI";
+    color: #d2994f;
+    text-decoration: underline;
+}
+
+section#two article.three {
+    float: left;
+    width: 228px;
+}
+
+section#two article.three p.how {
+    font: bold 16px "Microsoft YaHei UI";
+    color: #cc7680;
+    text-decoration: underline;
+}
+
+section#two article.three p.fire {
+    font: 12px/16px "Microsoft YaHei UI";
+    color: #231815;
+    opacity: 0.7;
+    float: left;
+    margin: 40px 5px 0 0;
+}
+
+section#two article.three p.percent {
+    font: italic 12px/16px "Microsoft YaHei UI";
+    color: #cd4a48;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+
+
+/* section three */
+
+section#three {
+    width: 892px;
+    margin: 74px auto 0;
+    overflow: hidden;
+}
+
+section#three article#bottom-left {
+    float: left;
+    width: 415px;
+}
+
+section#three article#bottom-left img {
+    float: right;
+    width: 166px;
+    height: 288px;
+    margin: 20px 2px 20px 20px;
+}
+
+section#three article#bottom-left p.title {
+    font: bold 42px "黑体";
+    color: #11456b;
+    border-bottom: 2px solid #10456b;
+}
+
+section#three article#bottom-left p.title span {
+    font: italic bold 72px "黑体";
+    color: #f5e327;
+}
+
+section#three article#bottom-left p.para-one {
+    font: 12px/16px "宋体";
+    color: #767777;
+    margin-top: 25px;
+}
+
+section#three article#bottom-left p.para-one span {
+    font: 70px "Microsoft YaHei UI";
+    color: #f5e327;
+    float: left;
+    margin-right: 20px;
+}
+
+section#three article#bottom-left p.para-two {
+    font: 12px/16px "宋体";
+    color: #767777;
+}
+
+section#three article#bottom-left p.para-three {
+    font: 12px/16px "宋体";
+    color: #767777;
+    text-indent: 2em;
+}
+
+section#three article#bottom-right {
+    float: right;
+    width: 458px;
+}
+
+section#three article#bottom-right header.show {
+    width: 458px;
+    height: 275px;
+    position: relative;
+    margin-top: 15px;
+}
+
+section#three article#bottom-right header.show img {
+    width: 458px;
+    height: 275px;
+}
+
+section#three article#bottom-right header.show div.show-mark {
+    position: absolute;
+    width: 458px;
+    height: 61px;
+    background: black;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+section#three article#bottom-right header.show p.describe {
+    position: absolute;
+    bottom: 8px;
+    height: 44px;
+    margin-left: 36px;
+    padding-left: 12px;
+    border-left: 3px solid #72b16a;
+    font: italic 12px/44px "Microsoft YaHei UI";
+    color: #72b16a;
+    word-spacing: 140%;
+}
+
+section#three article#bottom-right header.show p.describe span {
+    font: 26px/44px "Microsoft YaHei UI";
+    color: #fff;
+}
+
+section#three article#bottom-right footer.three-bottom {
+    width: 459px;
+    background: #eeedd6;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+section#three article#bottom-right footer.three-bottom p.text8 {
+    font: 16px/41px "宋体";
+    color: #5a5b5b;
+    float: left;
+    margin: 32px 0 0 31px;
+}
+
+section#three article#bottom-right footer.three-bottom p.text8 span.triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #10456b;
+    display: inline-block;
+    margin: -10px 5px 0 0;
+}
+
+section#three article#bottom-right footer.three-bottom p.three-bottom-right {
+    font: italic 12px/41px "黑体";
+    color: #5a5b5b;
+    margin-top: 32px;
+}
+
+section#three article#bottom-right footer.three-bottom div.pink {
+    width: 260px;
+    height: 160px;
+    background: #d45d5c;
+    float: left;
+    margin-top: 30px;
+}
+
+section#three article#bottom-right footer.three-bottom div.pink p.zero {
+    font: 110px "Microsoft YaHei UI";
+    color: #fff;
+    padding: 0 8px 0 10px;
+    line-height: 160px;
+    float: left;
+    height: 86px;
+}
+
+section#three article#bottom-right footer.three-bottom div.pink p.one-two-three {
+    font: italic 21px/24px "黑体";
+    color: #fff;
+    padding: 8px 0 0 5px;
+}
+
+section#three article#bottom-right footer.three-bottom div.pink p.hello-world {
+    font: 12px/10px "黑体";
+    color: #fff;
+    padding-left: 5px;
+}
+
+section#three article#bottom-right footer.three-bottom div.pink div.right-right {
+    width: 170px;
+    height: 86px;
+    float: left;
+    border-left: 2px solid #fff;
+    margin-top: 38px;
+}
+
+section#three article#bottom-right footer.three-bottom div.last {
+    float: right;
+    width: 180px;
+    height: 160px;
+    margin-top: 45px;
+}
+
+section#three article#bottom-right footer.three-bottom div.last span {
+    font: 72px "黑体";
+    color: #d45d5c;
+}
+
+section#three article#bottom-right footer.three-bottom div.last span.name1 {
+    float: left;
+    margin: -18px 10px 0 -40px;
+    height: 30px;
+}
+
+section#three article#bottom-right footer.three-bottom div.last span.name2 {
+    float: left;
+    margin: -20px 0 0 130px;
+}
+
+section#three article#bottom-right footer.three-bottom div.last p {
+    font: italic 14px/16px "黑体";
+    color: #5a5b5b;
+}
+
+
+/* footer */
+
+#footer {
+    margin: 40px auto 0;
+    width: 892px;
+    height: 59px;
+    border-top: 1px solid #938e8c;
+}
+
+#footer p {
+    float: right;
+    ont: 12px "黑体";
+    color: #d45d5c;
 }
