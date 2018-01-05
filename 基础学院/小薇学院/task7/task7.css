@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* header */
+
+#header {
+    min-width: 1280px;
+    height: 60px;
+    color: #333;
+    font: 14px 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+}
+
+#header_logo {
+    float: left;
+}
+
+#header_list {
+    float: right;
+}
+
+#header_list li {
+    margin: 20px;
+    float: left;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 0 auto 10px auto;
+    color: #ed8476;
+    border-bottom: #ed8476 4px solid;
+}
+
+ul,
+li {
+    list-style: none;
+}
