@@ -3,8 +3,19 @@
     margin: 0px;
 }
 
+body {
+    min-width: 1280px;
+    color: #909090;
+    font: 14px 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+}
+
 
 /* header */
+
+ul,
+li {
+    list-style: none;
+}
 
 #header {
     min-width: 1280px;
@@ -14,16 +25,33 @@
 }
 
 #header_logo {
+    font-size: 20px;
+    background: #fff url("img/logo.png") no-repeat;
+    background-size: 32px;
+    padding-left: 42px;
+    margin-top: 20px;
+    margin-left: 60px;
     float: left;
+    color: #909090;
 }
 
 #header_list {
     float: right;
+    padding-right: 67px;
 }
 
 #header_list li {
     margin: 20px;
     float: left;
+}
+
+#header ul li:last-child {
+    background: #fff url("img/nav-user.png") no-repeat 0 50%;
+    padding-left: 21px;
+}
+
+#header ul li:last-child a {
+    color: #ed8476;
 }
 
 a:link,
@@ -33,13 +61,44 @@ a:active {
     text-decoration: none;
 }
 
-a:hover {
+#header a:hover {
     padding: 0 auto 10px auto;
     color: #ed8476;
     border-bottom: #ed8476 4px solid;
 }
 
-ul,
-li {
-    list-style: none;
+
+/* banner */
+
+#banner {
+    background: #fff url("img/banner-bg.png") no-repeat;
+    background-size: cover;
+    height: 690px;
+    padding-left: 117px;
+}
+
+#banner h2 {
+    font-size: 48px;
+    color: #fff;
+    padding-top: 230px;
+    margin: 0 0 30px;
+}
+
+#banner p {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 12px 9px;
+}
+
+#banner a {
+    display: block;
+    margin-top: 68px;
+    width: 330px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    background-color: #e7504d;
 }
