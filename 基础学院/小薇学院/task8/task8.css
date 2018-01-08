@@ -23,7 +23,7 @@
 }
 
 [class*="col-"]::before {
-    display: block;
+    display: table;
     content: "";
     /* width: 100%; */
 }

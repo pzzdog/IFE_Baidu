@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    text-align: center;
+    padding: 20px;
+}
+
+.container div {
+    width: 150px;
+    border: 1px solid tomato;
+}
+
+@media screen and (min-width:641px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .container div {
+        margin-bottom: 10px;
+    }
+    .order {
+        order: -1;
+    }
+}
