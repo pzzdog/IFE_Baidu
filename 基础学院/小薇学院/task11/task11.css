@@ -149,9 +149,9 @@ header .nav ul a:hover {
     justify-content: space-around;
 }
 
-.module .module_article img {
+.module img {
     height: 100px;
-    width: 100%;
+    width: 90%;
 }
 
 .module .module_article .ar_text {
@@ -165,7 +165,7 @@ header .nav ul a:hover {
 .module .module_article .ar_text p {
     text-align: center;
     line-height: 40px;
-    width: 150%;
+    width: 80px;
     height: 40px;
     background: #eee;
 }
