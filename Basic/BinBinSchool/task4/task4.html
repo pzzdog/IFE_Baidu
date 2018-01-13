@@ -83,6 +83,13 @@
     }
 
     init();
+
+    //点击删除功能 firefox 不支持
+    listShow.addEventListener("click", function() {
+        if (event.target.nodeName.toLowerCase() == "li") {
+            listShow.removeChild(event.target);
+        }
+    })
 </script>
 
 </html>
