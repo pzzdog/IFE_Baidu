@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            list-style: none;
+            /* width: 20px;
+            height: 20px; */
+            margin: auto;
+        }
+        
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+    <title>IFE JavaScript Task 04</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <input type="button" value="左侧入" id="inLeft">
+    <input type="button" value="右侧入" id="inRight">
+    <input type="button" value="左侧出" id="outLeft">
+    <input type="button" value="右侧出" id="outRight">
+    <ul id="list">
+
+    </ul>
+</body>
+<script>
+    var inPutOri = document.getElementById("input");
+    var listShow = document.getElementById("list");
+
+    function numberInput(inPutOri) {
+        if (inPutOri.value === "") {
+            alert("请输入一个数字");
+        } else if (isNaN(inPutOri.value)) {
+            alert("输入的不是数字格式，请输入一个数字");
+        } else {
+            return inPutOri.value;
+        }
+    }
+    /*--input---*/
+    function inLeft() {
+        var inPut = numberInput(inPutOri);
+        var li = document.createElement("li");
+        li.innerHTML = inPut;
+        listShow.insertBefore(li, listShow.firstChild);
+
+    }
+
+    function inRight() {
+        var inPut = numberInput(inPutOri);
+        var li = document.createElement("li");
+        li.innerHTML = inPut;
+        listShow.insertBefore(li, listShow.lastChild);
+    }
+    /*--delete---*/
+    function outLeft() {
+        listShow.removeChild(listShow.firstChild);
+    }
+
+    function outRight() {
+        listShow.removeChild(listShow.lastChild);
+    }
+
+    function init() {
+        var btn_inLeft = document.getElementById("inLeft");
+        btn_inLeft.onclick = inLeft;
+        var btn_inRight = document.getElementById("inRight");
+        btn_inRight.onclick = inRight;
+        var btn_outLeft = document.getElementById("outLeft");
+        btn_outLeft.onclick = outLeft;
+        var btn_outRight = document.getElementById("outRight");
+        btn_outRight.onclick = outRight;
+
+    }
+
+    init();
+</script>
+
+</html>
