@@ -36,10 +36,9 @@
     var listShow = document.getElementById("list");
 
     function numberInput(inPutOri) {
-        if (inPutOri.value === "") {
-            alert("请输入一个数字");
-        } else if (isNaN(inPutOri.value)) {
-            alert("输入的不是数字格式，请输入一个数字");
+        if ((inPutOri.value == "") || (isNaN(inPutOri.value))) {
+            alert("请输入数字");
+            return false;
         } else {
             return inPutOri.value;
         }
@@ -48,16 +47,19 @@
     function inLeft() {
         var inPut = numberInput(inPutOri);
         var li = document.createElement("li");
-        li.innerHTML = inPut;
-        listShow.insertBefore(li, listShow.firstChild);
-
+        if (inPut) {
+            li.innerHTML = inPut;
+            listShow.insertBefore(li, listShow.firstChild);
+        }
     }
 
     function inRight() {
         var inPut = numberInput(inPutOri);
         var li = document.createElement("li");
-        li.innerHTML = inPut;
-        listShow.insertBefore(li, listShow.lastChild);
+        if (inPut) {
+            li.innerHTML = inPut;
+            listShow.insertBefore(li, listShow.lastChild);
+        }
     }
     /*--delete---*/
     function outLeft() {
