@@ -18,7 +18,7 @@ function inLeft() { //left input
     if (inPut) {
         // li.innerHTML = inPut;
         li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
-        if (listShow.childNodes.length <= 61) {
+        if (listShow.childNodes.length < 60) {
             listShow.insertBefore(li, listShow.firstChild);
         } else(alert("容量已满"))
     }
@@ -30,8 +30,8 @@ function inRight() { //right input
     if (inPut) {
         // li.innerHTML = inPut;
         li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
-        if (listShow.childNodes.length <= 61) {
-            listShow.insertBefore(li, listShow.lastChild);
+        if (listShow.childNodes.length < 60) {
+            listShow.appendChild(li);
         } else(alert("容量已满"))
     }
 }
@@ -49,7 +49,7 @@ function outRight() {
 
 /*---functions----------------*/
 function randomNum() { //随即生成数据填满
-    for (var i = 0; listShow.childNodes.length <= 61; i++) {
+    for (var i = 0; listShow.childNodes.length < 60; i++) {
         var inPut = parseInt(Math.random() * 91) + 10;
         var li = document.createElement("li");
         li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
@@ -58,8 +58,8 @@ function randomNum() { //随即生成数据填满
 }
 
 function sort() { //排序  不支持右侧插入得重新排序
-    for (let i = 0; i < listShow.childNodes.length - 1; i++) {
-        for (let j = i + 1; j < listShow.childNodes.length - 1; j++) {
+    for (let i = 0; i < listShow.childNodes.length; i++) {
+        for (let j = i + 1; j < listShow.childNodes.length; j++) {
             var a = listShow.childNodes[i].style.height;
             var b = listShow.childNodes[j].style.height;
             if (parseInt(a) >= parseInt(b)) {
