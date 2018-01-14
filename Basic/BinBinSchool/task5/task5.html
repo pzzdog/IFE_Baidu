@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            list-style: none;
+            /* width: 20px;
+            height: 20px; */
+            margin: auto;
+        }
+        
+        li {
+            display: inline-block;
+            margin: 1px;
+            width: 15px;
+        }
+    </style>
+    <title>IFE JavaScript Task 04</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <input type="button" value="左侧入" id="inLeft">
+    <input type="button" value="右侧入" id="inRight">
+    <input type="button" value="左侧出" id="outLeft">
+    <input type="button" value="右侧出" id="outRight">
+    <input type="button" value="随即数据填满" id="random">
+    <input type="button" value="排序" id="sort">
+    <ul id="list">
+
+    </ul>
+</body>
+<script>
+    var inPutOri = document.getElementById("input");
+    var listShow = document.getElementById("list");
+
+
+    function numberInput(inPutOri) {
+        if ((inPutOri.value == "") || (isNaN(inPutOri.value)) || (inPutOri.value > 100) || (inPutOri.value < 10)) {
+            alert("请输入10-100数字");
+            return false;
+        } else {
+            return inPutOri.value;
+        }
+    }
+
+    /*----input----------------------------*/
+    function inLeft() { //left input
+        var inPut = numberInput(inPutOri);
+        var li = document.createElement("li");
+        if (inPut) {
+            // li.innerHTML = inPut;
+            li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
+            if (listShow.childNodes.length < 61) {
+                listShow.insertBefore(li, listShow.firstChild);
+            } else(alert("容量已满"))
+        }
+    }
+
+    function inRight() { //right input
+        var inPut = numberInput(inPutOri);
+        var li = document.createElement("li");
+        if (inPut) {
+            // li.innerHTML = inPut;
+            li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
+            if (listShow.childNodes.length < 61) {
+                listShow.insertBefore(li, listShow.lastChild);
+            } else(alert("容量已满"))
+        }
+    }
+    /*----------------------------*/
+
+    /*--delete------------------*/
+    function outLeft() {
+        listShow.removeChild(listShow.firstChild);
+    }
+
+    function outRight() {
+        listShow.removeChild(listShow.lastChild);
+    }
+    /*----------------------------*/
+
+    /*---functions----------------*/
+    function randomNum() { //随即生成数据填满
+        for (var i = 0; listShow.childNodes.length <= 60; i++) {
+            var inPut = Math.random() * 91 + 10;
+            var li = document.createElement("li");
+            li.style = "background:" + randomColor().toString() + ";" + "height:" + (inPut * 4).toString() + "px;";
+            listShow.insertBefore(li, listShow.lastChild);
+        }
+    }
+
+
+    function randomColor() { //生产随机颜色
+        var rand = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        if (rand.length === 6) {
+            return "#" + rand;
+        } else {
+            return randomColor();
+        }
+    }
+
+    //点击删除功能 function括号中firefox必须加入event而safari与Chrome则可以不加运行
+    listShow.addEventListener("click", function(event) {
+            if (event.target.nodeName.toLowerCase() == "li") {
+                listShow.removeChild(event.target);
+            }
+        })
+        /*------------------------*/
+
+    function init() {
+        var btn_inLeft = document.getElementById("inLeft");
+        btn_inLeft.onclick = inLeft;
+        var btn_inRight = document.getElementById("inRight");
+        btn_inRight.onclick = inRight;
+        var btn_outLeft = document.getElementById("outLeft");
+        btn_outLeft.onclick = outLeft;
+        var btn_outRight = document.getElementById("outRight");
+        btn_outRight.onclick = outRight;
+        var btn_random = document.getElementById("random");
+        btn_random.onclick = randomNum;
+        var btn_sort = document.getElementById("sort");
+        btn_sort.onclick = sort;
+    }
+    init();
+</script>
+
+</html>
