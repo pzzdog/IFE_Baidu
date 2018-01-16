@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    border: 0;
+    background: #ffffff;
+}
+
+
+/* display */
+
+#display {
+    height: 400px;
+    width: 1100px;
+    border: solid 1px #d47779;
+    margin: 50px auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#display div {
+    border: #d47779 1px solid;
+    width: 330px;
+    height: 300px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#display div div {
+    border: #d47779 1px solid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#display div div div {
+    border: #d47779 1px solid;
+    width: 30px;
+    height: 60px;
+    text-align: center;
+}
+
+
+/* control */
+
+#control input {
+    border: 1px solid #642424;
+}
+
+#control {
+    height: 50px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+#control input {
+    width: 80px;
+    height: 30px;
+}
+
+
+/* search */
+
+#find {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+#search {
+    height: 30px;
+    border: 1px solid #642424;
+}
+
+#searContent {
+    height: 25px;
+    border: solid 1px #966329;
+}
+
+
+/* change */
+
+#change {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+#add,
+#del {
+    height: 30px;
+    border: 1px solid #642424;
+}
+
+#addContent {
+    height: 25px;
+    border: solid 1px #966329;
+}

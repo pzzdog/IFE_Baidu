@@ -13,7 +13,7 @@ function searchF(content) { //查询函数
 }
 
 function showNode2(node) { //查找颜色变换
-    if (node.innerText.indexOf(parseInt(contentS.value)) === 0) {
+    if (node.innerText.split('\n')[0] == contentS.value) {
         setTimeout(function() {
             node.style.backgroundColor = "#ff0000";
         }, timer += 500);
