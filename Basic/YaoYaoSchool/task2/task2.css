@@ -1,0 +1,59 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+form {
+    width: 500px;
+    margin: 20px auto;
+}
+
+
+/* 左右布局 */
+
+form div {
+    display: flex;
+    display: -webkit-flex;
+    width: 500px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+form div .label1 {
+    width: 120px;
+    height: 100%;
+    vertical-align: top;
+    text-align: right;
+}
+
+form div div {
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+
+/* 右边模块分为上下 */
+
+form div div input {
+    width: 350px;
+    height: 25px;
+    border: solid 1px #2d2926;
+}
+
+form div div .label2 {
+    width: 350px;
+    height: 10px;
+}
+
+
+/*提交按钮居中 */
+
+form input[type="submit"] {
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    background: #2bbee2;
+}
