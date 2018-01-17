@@ -1,0 +1,31 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+#sectionOne {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#sectionOne p {
+    height: 100%;
+    width: 40px;
+}
+
+#sectionOne input[type="text"] {
+    height: 100%;
+    border: solid 1px #a5a4a4;
+}
+
+label {
+    margin-left: 40px;
+    font-size: 13px;
+    color: #a5a4a4;
+}
