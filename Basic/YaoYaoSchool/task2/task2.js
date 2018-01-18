@@ -81,8 +81,10 @@ phone.onblur = function () {
 submit.onclick = function () {
     if (sum == 0) {
         alert("注册信息有误，请检查。");
+        return false;
     } else {
         alert("注册信息输入完毕");
+        return false;
     }
 }
 

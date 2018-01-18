@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+#choose {
+    width: 400px;
+    margin: 50px auto 0px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* display */
+#school {
+    width: 400px;
+    margin: 30px auto 0px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#school select{
+    height: 30px;
+    width: 100px;
+    border: 1px solid #74aecc;
+}
+
+#company {
+    width: 400px;
+    margin: 30px auto 0px;
+    display:none;
+    justify-content: space-between;
+}
+#company input{
+    height: 25px;
+    border: 1px solid #74aecc;
+}
