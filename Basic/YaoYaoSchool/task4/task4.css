@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* table */
+
+table {
+    margin: 5px auto;
+    border-spacing: 0;
+    text-align: center;
+}
+
+tr:nth-child(n+2)>td:nth-child(n+2) {
+    border: 1px solid #ddd;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* control */
+
+#control {
+    margin: 1px auto;
+    width: 400px;
+}
+
+#control div {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* block */
+
+#block {
+    height: 100%;
+    width: 100%;
+    background-color: #f00;
+    overflow: hidden;
+}
+
+#block2 {
+    height: 20%;
+    width: 100%;
+    background-color: #00f;
+}
