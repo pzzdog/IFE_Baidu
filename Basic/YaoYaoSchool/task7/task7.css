@@ -1,0 +1,109 @@
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+#container {
+    height: 600px;
+    margin: 100px auto 0 auto;
+}
+
+
+/* ---输入--- */
+
+#contentIn {
+    width: 700px;
+    margin: 48px auto;
+}
+
+#contentIn input {
+    width: 128px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#contentIn button {
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    width: 72px;
+    height: 32px;
+    text-align: center;
+    background-color: #3c93cb;
+    cursor: pointer;
+}
+
+#content button:active {
+    background-color: #3875a9;
+}
+
+
+/* ---表格--- */
+
+table {
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th {
+    color: #fff;
+    background-color: #494949;
+    width: 164px;
+    height: 48px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+table td {
+    width: 164px;
+    height: 48px;
+    border: 1px solid #e5e5e5;
+    white-space: nowrap
+}
+
+
+/* 上下按钮 */
+
+.sortTab {
+    display: inline-block;
+    width: 16px;
+    height: 32px;
+    position: absolute;
+    right: 28px;
+    top: 1px;
+}
+
+.sortUp {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 11px solid;
+    border-color: transparent transparent #fff transparent;
+    cursor: pointer;
+}
+
+.sortDown {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 11px solid #fff;
+    border-color: #fff transparent transparent transparent;
+    cursor: pointer;
+}
+
+.sortUp:active {
+    border-color: transparent transparent #0aaa5a transparent;
+}
+
+.sortDown:active {
+    border-color: #c01010 transparent transparent transparent;
+}
