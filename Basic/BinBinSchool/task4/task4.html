@@ -12,7 +12,7 @@
             height: 20px; */
             margin: auto;
         }
-        
+
         li {
             display: inline-block;
             margin: 20px;
@@ -85,7 +85,7 @@
     init();
 
     //点击删除功能 function括号中firefox必须加入event而safari与Chrome则可以不加运行
-    listShow.addEventListener("click", function(event) {
+    listShow.addEventListener("click", function (event) {
         if (event.target.nodeName.toLowerCase() == "li") {
             listShow.removeChild(event.target);
         }

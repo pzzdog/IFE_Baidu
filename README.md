@@ -34,9 +34,9 @@
 ## 耀耀学院
 
 + [Task1--表单（一）单个表单项的检验](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task2--表单（二）多个表单项的动态校验](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task3--表单（三）联动](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task4--听指令的小方块（一）](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task5--听指令的小方块（二）](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task6--任务六：UI组件之浮出层](/Basic/YaoYaoSchool/task1/task1.html)
-+ [Task7--任务七：UI组件之排序表格](/Basic/YaoYaoSchool/task1/task1.html)
++ [Task2--表单（二）多个表单项的动态校验](/Basic/YaoYaoSchool/task2/task2.html)
++ [Task3--表单（三）联动](/Basic/YaoYaoSchool/task3/task3.html)
++ [Task4--听指令的小方块（一）](/Basic/YaoYaoSchool/task4/task4.html)
++ [Task5--听指令的小方块（二）](/Basic/YaoYaoSchool/task5/task5.html)
++ [Task6--任务六：UI组件之浮出层](/Basic/YaoYaoSchool/task6/task6.html)
++ [Task7--任务七：UI组件之排序表格](/Basic/YaoYaoSchool/task7/task7.html)
