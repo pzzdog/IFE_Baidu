@@ -28,6 +28,7 @@
     left: 50px;
     height: 260px;
     width: 400px;
+    transition: all 2s ease-in-out;
 }
 
 .title {
@@ -37,6 +38,7 @@
     top: 20px;
     left: 50px;
 }
+
 
 h2 {
     color: transparent;
@@ -49,6 +51,7 @@ h2 {
     line-height: 260px;
     margin: 0;
     opacity: 0;
+    transition: all 2s ease;
 }
 
 .box:hover img {
@@ -58,7 +61,7 @@ h2 {
 .box:hover .bac {
     opacity: 0.05;
     background: #a7c6e2;
-    transition: all 5s ease-in-out;
+    
 }
 
 .title:before {
@@ -69,6 +72,7 @@ h2 {
     left: 50%;
     top: 0;
     visibility: hidden;
+    transition: all 1s ease-in;
 }
 
 .box:hover .title:before {
@@ -79,7 +83,7 @@ h2 {
     left: 0;
     height: 98%;
     width: 100%;
-    transition: all 1s ease-in;
+    /* transition: all 1s ease-in; */
 }
 
 .title:after {
@@ -89,6 +93,7 @@ h2 {
     height: 0;
     left: 0;
     top: 50%;
+    transition: all 1s ease-in;
 }
 
 .box:hover .title:after {
@@ -99,12 +104,12 @@ h2 {
     top: 0;
     height: 100%;
     width: 99%;
-    transition: all 1s ease-in;
+    /* transition: all 1s ease-in; */
 }
 
 .box:hover h2 {
     opacity: 1;
-    transition: all 2s ease;
+    /* transition: all 2s ease; */
 }
 
 @keyframes streamer {

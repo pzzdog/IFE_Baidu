@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 10px;
+            border: 1px solid #000;
+        }
+
+        #a1 {
+            background-color: #73cf48;
+            width: 200px;
+            height: 300px;
+            transition: background-color 2s ease-in;
+        }
+
+        #a1:hover {
+            background-color: aliceblue;
+        }
+
+        #a2 {
+            background-color: #73cf48;
+            width: 200px;
+            height: 300px;
+        }
+
+        #a2:hover {
+            background-color: aliceblue;
+            transition: background-color 2s ease-in;
+        }
+        /* ----transform ---*/
+
+        #b1,
+        #b2,
+        #b3,
+        #b4 {
+            background-color: #73cf48;
+            width: 200px;
+            height: 300px;
+        }
+
+        #b1 {
+            transform: skew(12deg);
+        }
+        #b2{
+            transform: rotate(45deg);
+        }
+        #b3{
+            transform: scale(0.8,0.6);
+        }
+        #b4{
+            transform: translate(-10px, 20px);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="a1">a1</div>
+    <div id="a2">a2</div>
+    <div>
+        <div id="b1">偏移（skew）--块的正中心保值不变，下面向右上面向左。</div>
+        <div id="b2">旋转（rotate）--块的正中心顺时针</div>
+        <div id="b3">缩放（scale）--（横，纵）</div>
+        <div id="b4">平移（translate）--（横，纵）</div>
+    </div>
+</body>
+
+</html>
