@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+        }
+        /* 3/4 环 */
+
+        #container {
+            height: 300px;
+            width: 300px;
+            margin-left: calc( 50vw - 150px);
+            margin-top: calc( 50vh - 150px);
+            position: relative;
+        }
+
+        #circle-out {
+            width: 100px;
+            height: 100px;
+            border-radius: 52px;
+            border-left: solid #ec61b7 2px;
+            border-right: solid #ec61b7 2px;
+            border-top: solid #ec61b7 2px;
+            border-bottom: solid transparent 2px;
+            animation: nidaye 1s infinite linear;
+            top: 100px;
+            left: 100px;
+            position: absolute;
+        }
+
+        @keyframes nidaye {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        /* 内圆*/
+
+        #full-circle {
+            width: 0;
+            height: 50px;
+            border-left: 25px #ec61b7 solid;
+            border-right: 25px pink solid;
+            border-radius: 25px;
+            top: 125px;
+            left: 125px;
+            position: absolute;
+            z-index: 5;
+        }
+
+        #half-right {
+            width: 0;
+            height: 50px;
+            border-left: 25px transparent solid;
+            border-right: 25px pink solid;
+            border-radius: 25px;
+            top: 125px;
+            left: 125px;
+            position: absolute;
+            animation: rightrotate 2s infinite linear;
+        }
+
+        @keyframes rightrotate {
+            from {
+                transform: rotate(0deg);
+                z-index: 8;
+            }
+            25% {
+                transform: rotate(-180deg);
+                ;
+                z-index: 8;
+            }
+
+            50% {
+                transform: rotate(-180deg);
+                z-index: 8;
+            }
+            50.000000001% {
+                transform: rotate(-180deg);
+                z-index: 6;
+            }
+            75% {
+                transform: rotate(-360deg);
+                z-index: 6;
+            }
+
+            to {
+                transform: rotate(-360deg);
+                z-index: 6;
+            }
+        }
+
+        #half-left {
+            width: 0;
+            height: 50px;
+            border-left: 25px  #ec61b7 solid;
+            border-right: 25px transparent solid;
+            border-radius: 25px;
+            top: 125px;
+            left: 125px;
+            position: absolute;
+            animation: leftrotate 2s infinite linear;
+        }
+
+        @keyframes leftrotate {
+            from {
+                transform: rotate(0deg);
+                z-index: -1;
+            }
+            25% {
+                transform: rotate(0deg);
+                z-index: -1;
+            }
+            25.000000001% {
+                transform: rotate(0deg);
+                z-index: 7;
+            }
+            /*开始等待*/
+            50% {
+                transform: rotate(-180deg);
+                z-index: 7;
+            }
+
+            75% {
+                transform: rotate(-180deg);
+                z-index: 7;
+            }
+            to {
+                transform: rotate(-360deg);
+                z-index: 7;
+            }
+        }
+    </style>
+    <title>CSS3饼状loading效果</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="full-circle"></div>
+        <div id="half-left" class="circle-in"></div>
+        <div id="half-right" class="circle-in"></div>
+        <div id="circle-out"></div>
+    </div>
+</body>
+
+</html>
