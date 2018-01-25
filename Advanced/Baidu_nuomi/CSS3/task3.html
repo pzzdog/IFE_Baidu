@@ -14,15 +14,23 @@
 
 
         #stage {
-            width: calc( 10vw);
-            height: calc( 10vh);
-            margin-left: calc( 45vw);
-            margin-top: calc( 45vh);
+            width: calc( 60vw);
+            height: calc( 60vh);
+            margin-top: calc( 20vh);
+            margin-left:calc( 20vw);
             position: relative;
+            perspective: calc( 60vh);
+        }
+
+        #container{
+            position: absolute;
+            left: calc( 25vw);
+            top: calc( 20vw);
             transform-style: preserve-3d;
             -webkit-transform-style: preserve-3d;
-            animation: change-picture 6s infinite;
-        
+            animation: change-picture 6s linear infinite;
+            width: calc( 10vw);
+            height: calc( 10vh);
         }
 
         img {
@@ -32,27 +40,27 @@
         }
 
         img:nth-child(1) {
-            transform: rotateY(0deg) translateZ(10vw);
+            transform: rotateY(0deg) translateZ(20vh);
         }
 
         img:nth-child(2) {
-            transform: rotateY(60deg) translateZ(10vw);
+            transform: rotateY(60deg) translateZ(20vh);
         }
 
         img:nth-child(3) {
-            transform: rotateY(120deg) translateZ(10vw);
+            transform: rotateY(120deg) translateZ(20vh);
         }
 
         img:nth-child(4) {
-            transform: rotateY(180deg) translateZ(10vw);
+            transform: rotateY(180deg) translateZ(20vh);
         }
 
         img:nth-child(5) {
-            transform: rotateY(240deg) translateZ(10vw);
+            transform: rotateY(240deg) translateZ(20vh);
         }
 
         img:nth-child(6) {
-            transform: rotateY(300deg) translateZ(10vw);
+            transform: rotateY(300deg) translateZ(20vh);
         }
 
         @keyframes change-picture {
@@ -83,12 +91,14 @@
 
 <body>
     <div id="stage">
-        <img src="./img/1.jpg" alt="">
-        <img src="./img/3.jpg" alt="">
-        <img src="./img/4.jpg" alt="">
-        <img src="./img/8.jpg" alt="">
-        <img src="./img/9.jpg" alt="">
-        <img src="./img/10.jpg" alt="">
+        <div id="container">
+            <img src="./img/1.jpg" alt="">
+            <img src="./img/3.jpg" alt="">
+            <img src="./img/4.jpg" alt="">
+            <img src="./img/8.jpg" alt="">
+            <img src="./img/9.jpg" alt="">
+            <img src="./img/10.jpg" alt="">
+        </div>
     </div>
 </body>
 
