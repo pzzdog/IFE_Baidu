@@ -46,27 +46,80 @@
         #b1 {
             transform: skew(12deg);
         }
-        #b2{
+
+        #b2 {
             transform: rotate(45deg);
         }
-        #b3{
-            transform: scale(0.8,0.6);
+
+        #b3 {
+            transform: scale(0.8, 0.6);
         }
-        #b4{
+
+        #b4 {
             transform: translate(-10px, 20px);
         }
+        /* animation */
+
+        #c1 {
+            width: 300px;
+            height: 200px;
+            background: #fcf;
+            transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+        }
+     
+        #c1:hover {
+            width: 600px;
+            /* -webkit-animation-name: sb;
+            -webkit-animation-duration: 2s;
+            animation-iteration-count: 2;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-direction: alternate; */
+        }
+
+        @keyframes sb {
+            0% {
+                width: 300px;
+            }
+            100% {
+                width: 600px;
+            }
+        }
+
+        #d1 {
+            width: 300px;
+            height: 200px;
+            background: #d1e237;
+            transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+        }
+
+        #d1:hover{
+            transform: rotate(360deg);
+        }
     </style>
-    <title>Document</title>
+    <title>transition_transform_animation</title>
 </head>
 
 <body>
     <div id="a1">a1</div>
     <div id="a2">a2</div>
+
     <div>
         <div id="b1">偏移（skew）--块的正中心保值不变，下面向右上面向左。</div>
         <div id="b2">旋转（rotate）--块的正中心顺时针</div>
         <div id="b3">缩放（scale）--（横，纵）</div>
         <div id="b4">平移（translate）--（横，纵）</div>
+    </div>
+
+    <div>
+        <div id="c1"></div>
+    </div>
+
+    <div>
+        <div id="d1"></div>
     </div>
 </body>
 
