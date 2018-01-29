@@ -27,17 +27,17 @@ function ajax(url, options) {
     }
 
     // readystate
-   xhr.onreadystatechange=function(){
-       if (xhr.readyState===4) {
-           if (xhr.readyState===200) {
-               if (options.onsuccess) {
-                   options.onsuccess(xhr.responseText,xhr.responseXML);
-               }
-           }else{
-               if (options.onfail) {
-                   options.onfail();
-               }
-           }
-       }
-   }
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.readyState === 200) {
+                if (options.onsuccess) {
+                    options.onsuccess(xhr.responseText, xhr.responseXML);
+                }
+            } else {
+                if (options.onfail) {
+                    options.onfail();
+                }
+            }
+        }
+    }
 }
